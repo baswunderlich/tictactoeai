@@ -10,7 +10,7 @@ type Coordinate struct {
 }
 
 func GetPossibleMoves(game tictactoe.Game) []Coordinate {
-	freeCoordinates := make([]Coordinate, 1)
+	freeCoordinates := make([]Coordinate, 0)
 
 	for x := range game.Field {
 		for y := range game.Field[0] {
